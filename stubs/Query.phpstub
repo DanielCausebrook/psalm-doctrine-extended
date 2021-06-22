@@ -1,0 +1,11 @@
+<?php
+
+namespace Doctrine\ORM;
+
+/**
+ * @template T
+ * @extends AbstractQuery<T>
+ */
+final class Query extends AbstractQuery {
+
+}

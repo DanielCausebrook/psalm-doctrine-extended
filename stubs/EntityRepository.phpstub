@@ -1,0 +1,24 @@
+<?php
+namespace Doctrine\ORM;
+
+use Doctrine\Common\Collections\Selectable;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\Criteria;
+use Doctrine\Common\Persistence\ObjectRepository;
+use Doctrine\ORM\QueryBuilder;
+
+/**
+ */
+class EntityRepository implements ObjectRepository, Selectable {
+
+    /**
+     * @param string $alias
+     * @param string $indexBy
+     *
+     * @return QueryBuilder<T>
+     */
+    public function createQueryBuilder($alias, $indexBy = null): QueryBuilder {
+
+    }
+
+}

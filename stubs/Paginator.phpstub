@@ -1,0 +1,22 @@
+<?php
+
+namespace Doctrine\ORM\Tools\Pagination;
+
+use Countable;
+use Doctrine\ORM\Query;
+use Doctrine\ORM\QueryBuilder;
+use IteratorAggregate;
+
+class Paginator implements Countable, IteratorAggregate {
+
+    /** @var Query<T> */
+    private $query;
+
+    /**
+     * @param Query<T>|QueryBuilder<T> $query
+     * @param bool                     $fetchJoinCollection
+     */
+    public function __construct($query, $fetchJoinCollection = true) {
+
+    }
+}

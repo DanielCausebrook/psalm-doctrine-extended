@@ -1,0 +1,41 @@
+<?php
+
+namespace Doctrine\ORM;
+
+use Doctrine\Common\Collections\Selectable;
+use Doctrine\Common\Collections\Collection;
+
+/**
+ * @template T
+ */
+abstract class AbstractQuery
+{
+    /**
+     * @param string|int $hydrationMode
+     *
+     * @return Collection<int, T>&Selectable<int, T>
+     */
+    public function getResult($hydrationMode = self::HYDRATE_OBJECT) {
+    }
+
+    /**
+     * @param string|int $hydrationMode
+     *
+     * @return T|null
+     *
+     * @throws NonUniqueResultException
+     */
+    public function getOneOrNullResult($hydrationMode = null) {
+    }
+
+    /**
+     * @param string|int $hydrationMode
+     *
+     * @return T
+     *
+     * @throws NonUniqueResultException If the query result is not unique.
+     * @throws NoResultException        If the query returned no result and hydration mode is not HYDRATE_SINGLE_SCALAR.
+     */
+    public function getSingleResult($hydrationMode = null) {
+    }
+}

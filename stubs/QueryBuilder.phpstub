@@ -1,0 +1,15 @@
+<?php
+
+namespace Doctrine\ORM;
+
+/**
+ * @template T
+ */
+class QueryBuilder {
+    /**
+     * @return Query<T>
+     */
+    public function getQuery(): Query {
+
+    }
+}
