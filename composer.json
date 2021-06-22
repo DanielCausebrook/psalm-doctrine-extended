@@ -1,12 +1,12 @@
 {
-    "name": "DanielCausebrook/psalm-doctrine-extended-plugin",
+    "name": "danielcausebrook/psalm-doctrine-extended-plugin",
     "description": "Adds templated types to Queries",
     "type": "psalm-plugin",
     "license": "MIT",
     "authors": [
         {
             "name": "Daniel Causebrook",
-            "email": "daniel@causebroo.co.uk"
+            "email": "daniel@causebrook.co.uk"
         }
     ],
     "require": {
