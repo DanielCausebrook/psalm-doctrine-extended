@@ -1,12 +1,12 @@
 {
-    "name": "weirdan/psalm-plugin-skeleton",
-    "description": "Template to create psalm-plugin projects from",
+    "name": "DanielCausebrook/psalm-doctrine-extended-plugin",
+    "description": "Adds templated types to Queries",
     "type": "psalm-plugin",
     "license": "MIT",
     "authors": [
         {
-            "name": "Bruce Weirdan",
-            "email": "weirdan@gmail.com"
+            "name": "Daniel Causebrook",
+            "email": "daniel@causebroo.co.uk"
         }
     ],
     "require": {
@@ -22,19 +22,19 @@
     },
     "extra": {
         "psalm": {
-            "pluginClass": "Weirdan\\PsalmPluginSkeleton\\Plugin"
+            "pluginClass": "DanielCausebrook\\PsalmDotrineExtendedPlugin\\Plugin"
         }
     },
     "autoload": {
         "psr-4": {
-            "Weirdan\\PsalmPluginSkeleton\\": [
+            "DanielCausebrook\\PsalmDotrineExtendedPlugin\\": [
                 "."
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Weirdan\\PsalmPluginSkeleton\\Tests\\": [
+            "DanielCausebrook\\PsalmDotrineExtendedPlugin\\Tests\\": [
                 "tests/_support",
                 "tests"
             ]

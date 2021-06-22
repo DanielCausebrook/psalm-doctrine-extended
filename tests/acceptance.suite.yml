@@ -10,4 +10,4 @@ modules:
         - Cli
         - Filesystem
         - \Weirdan\Codeception\Psalm\Module
-        - \Weirdan\PsalmPluginSkeleton\Tests\Helper\Acceptance
+        - DanielCausebrook\PsalmDotrineExtendedPlugin\Tests\Helper\Acceptance
