@@ -13,7 +13,7 @@ abstract class AbstractQuery
     /**
      * @param string|int $hydrationMode
      *
-     * @return Collection<int, T>&Selectable<int, T>
+     * @return T[]
      */
     public function getResult($hydrationMode = self::HYDRATE_OBJECT) {
     }
